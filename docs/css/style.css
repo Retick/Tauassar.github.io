@@ -1482,6 +1482,7 @@ main .medium-img-2 {
   .desktop-screenshot > img {
     width: auto;
     max-height: 250px;
+
   }
 
   .univero__screenshots,
@@ -1489,7 +1490,8 @@ main .medium-img-2 {
   .uniup__screenshots, .desktop-screenshot {
     padding: 25px 0 0 0;
     max-width: 100%;
-    width: 100%;
+    width: max-content;
+    margin: auto;
   }
 
   .animakuro__mobile-screenshot {
@@ -1586,7 +1588,7 @@ main .medium-img-2 {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 580px) {
   main .content-prev-button,
   main .content-next-button {
     display: none;

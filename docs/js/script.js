@@ -74,8 +74,7 @@ try{
       return;
     }
     if(element.className == 'active') {
-      let url = element.getAttribute('data-href');
-      window.open(url , '_blank');
+     return
     }else{
       let active_element = document.getElementsByClassName('active')[0];
       let active_index = $images.indexOf(active_element);
