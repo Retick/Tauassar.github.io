@@ -1461,7 +1461,7 @@ main .medium-img-2 {
 
 
   .title {
-  line-height: 130%;
+  line-height: 140%;
   }
 
   .typipay__text,
@@ -1548,6 +1548,7 @@ main .medium-img-2 {
   .body {
     max-width: 100%;
     padding: 24px 9% 0 16px;
+    font-size: 16px;
   }
 
   .typipay__screenshots {
@@ -1569,7 +1570,7 @@ main .medium-img-2 {
 
   .designer__content {
     padding: 0 24px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .designer__hashtags {
