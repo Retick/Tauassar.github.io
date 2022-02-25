@@ -74,7 +74,8 @@ try{
       return;
     }
     if(element.className == 'active') {
-     return
+      let url = element.getAttribute('data-href');
+      window.open(url , '_blank');
     }else{
       let active_element = document.getElementsByClassName('active')[0];
       let active_index = $images.indexOf(active_element);
@@ -217,31 +218,29 @@ testWebP(function (support) {
 });;
 // Get the modal
 var modal = document.getElementById("myModal");
-
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var images = [];
 images = Array.prototype.concat.apply(images, document.getElementsByClassName("content-3-frame-container"));
 images = Array.prototype.concat.apply(images, document.getElementsByClassName("content-3x3-frame-container"));
 images = Array.prototype.concat.apply(images, document.getElementsByClassName("content-3x4-frame-container"));
 images = Array.prototype.concat.apply(images, document.getElementsByClassName("content-4-frame-container"));
-images = Array.prototype.concat.apply(images, document.getElementsByClassName("content-image-block"));
+// images = Array.prototype.concat.apply(images, document.getElementsByClassName("content-image-block"));
 
 var modalImg = document.getElementById("img01");
-Array.prototype.map.call(images, (elem)=>{
-    elem.onclick = function(e){
+Array.prototype.map.call(images, (elem) => {
+    elem.onclick = function(e) {
         // img_url = window.getComputedStyle(test, false).backgroundImage.slice(5,-2);
+        modalImg.scrollTop = 0;
         modal.style.display = "block";
-        modalImg.src = window.getComputedStyle(e.target, false).backgroundImage.slice(5,-2);;
+        modalImg.src = window.getComputedStyle(e.target, false).backgroundImage.slice(5, -2);;
     }
 })
 
 // When the user clicks on modal, close the modal
-modal.onclick = function() { 
+modal.onclick = function() {
     modal.style.display = "none";
 }
 
 modalImg.onclick = function(event) {
     event.stopPropagation();
-}
-
-;
+};

@@ -1,46 +1,58 @@
 .slider {
-  height: 100%;
-  display: block;
-  perspective: 1000px;
-  width: 100%;
-  position: relative;
-  img {
-    top:20%;
-    left: 35%;
-  }
-  .active{
-    cursor: pointer;
-  }
+    height: 100%;
+    display: block;
+    perspective: 1400px;
+    width: 93%;
+    position: relative;
+    img {
+        top: 10%;
+        left: 30%;
+    }
+    .active {
+        cursor: pointer;
+        border-radius: 10px;
+    }
 }
+
 .slider img {
-  display: inline-block;
-  width: 30%;
-  height: auto;
-  position: absolute;
-  backface-visibility: hidden;
-  transition: 0.4s all;
+    display: inline-block;
+    width: auto;
+    border-radius: 10px;
+    height: 277px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.4s all;
 }
+
 .slider img.active {
-  z-index: 4;
+    z-index: 4;
 }
+
 body {
-  justify-content: center;
+    justify-content: center;
 }
+
 .slider-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  top: 20%;
-  left: 10%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    top: 20%;
+    left: 10%;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }

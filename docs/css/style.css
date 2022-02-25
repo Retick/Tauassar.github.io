@@ -309,6 +309,7 @@ body {
 }
 
 .uniup {
+  color: #ffffff;
   background: -o-linear-gradient(323.92deg, #FBA198 0%, #AC411D 100%);
   background: linear-gradient(126.08deg, #FBA198 0%, #AC411D 100%);
 }
@@ -431,6 +432,7 @@ body {
 }
 
 .animakuro {
+  color: #FFFFFF;
   background: -o-linear-gradient(323.92deg, #42525F 0%, #09121A 100%);
   background: linear-gradient(126.08deg, #42525F 0%, #09121A 100%);
 }
@@ -671,7 +673,7 @@ section {
 .slider {
   height: 100%;
   display: block;
-  -webkit-perspective: 1000px;
+  -webkit-perspective: 1400px;
           perspective: 1400px;
   width: 93%;
   position: relative;
@@ -684,11 +686,13 @@ section {
 
 .slider .active {
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .slider img {
   display: inline-block;
   width: auto;
+  border-radius: 10px;
   height: 277px;
   position: absolute;
   -webkit-backface-visibility: hidden;
@@ -729,7 +733,7 @@ body {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently
-     supported by Chrome, Edge, Opera and Firefox */
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -1415,7 +1419,7 @@ main .medium-img-2 {
   color: rgba(21, 16, 39, 0.6);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 580px) {
   main .content-mobile-navigation-buttons {
     display: none;
   }
@@ -1425,11 +1429,12 @@ main .medium-img-2 {
   .animakuro__body,
   .univero__body {
     max-width: 700px;
-    }
+  }
+
   .uniup__body {
     max-width: 720px;
   }
-  }
+}
 
 @media screen and (max-width: 1300px) {
   .body {
@@ -1459,9 +1464,13 @@ main .medium-img-2 {
     padding: 25px 0 0 0;
   }
 
+  .slider img {
+    left: 28%;
+    height: 200px;
+  }
 
   .title {
-  line-height: 140%;
+    line-height: 140%;
   }
 
   .typipay__text,
@@ -1479,17 +1488,23 @@ main .medium-img-2 {
     display: block;
   }
 
+  .archive .section-container {
+    height: 465px;
+  }
+
   .desktop-screenshot > img {
     width: auto;
     max-height: 250px;
-
   }
 
   .univero__screenshots,
   .animakuro__screenshots,
-  .uniup__screenshots, .desktop-screenshot {
+  .uniup__screenshots,
+  .desktop-screenshot {
     padding: 25px 0 0 0;
     max-width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: auto;
   }
@@ -1517,10 +1532,6 @@ main .medium-img-2 {
   .archive {
     height: 400px;
   }
-  .slider img {
-    left: 13%;
-    height: 160px;
-  }
 
   .archive__screenshots {
     padding: 60px 20px;
@@ -1542,8 +1553,8 @@ main .medium-img-2 {
 
   .typipay__card-screenshot {
     display: inline-block;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-70%);
+        -ms-transform: translateX(-70%);
             transform: translateX(-70%);
   }
 
@@ -1599,7 +1610,7 @@ main .medium-img-2 {
   }
 
   main .content-text {
-    padding-bottom: 40px;
+    padding: 40px;
   }
 
   main .content-3-frame-container {
@@ -1652,5 +1663,14 @@ main .medium-img-2 {
 
   .header__container {
     padding: 30px 5%;
+  }
+
+  .slider img {
+    left: 22%;
+    height: 130px;
+  }
+
+  .archive .section-container {
+    height: 405px;
   }
 }
