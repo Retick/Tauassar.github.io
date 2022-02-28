@@ -995,7 +995,7 @@ main .content-3x4-frame-container {
 main .img-3-container {
     width: 100%;
     height: 178px;
-    border-radius: 5px 0 0 0;
+    border-radius: 5px;
     background-repeat: no-repeat!important;
     background-size: 100%!important
 }
