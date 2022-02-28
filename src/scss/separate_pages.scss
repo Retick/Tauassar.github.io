@@ -61,8 +61,7 @@ main {
         background: linear-gradient(126.08deg, #006EE7 0%, #4950B7 100%);
     }
     .main-block-logo-big {
-        height: 39px;
-        width: 168px;
+        height: 41px;
         background-repeat: no-repeat;
         background-position: 0px 0px;
     }
@@ -371,7 +370,7 @@ main {
 }
 
 .animakuro-logo-big {
-    width: 92.5px;
+    width: 97.5px;
     height: 37px;
     background-image: url('../img/019-animakuro_big.svg');
 }
@@ -529,12 +528,15 @@ $breakpoint_3: 375px;
         }
         .content-3-frame-container {
             margin-bottom: 40px;
+            margin-bottom: 40px;
         }
         .content-4-frame-container {
+            padding-bottom: 40px;
             padding-bottom: 40px;
         }
         .img-3-container {
             height: 69px;
+            border-radius: 2px;
         }
         .img-4-container {
             height: 160px;

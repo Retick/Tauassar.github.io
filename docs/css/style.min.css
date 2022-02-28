@@ -1560,7 +1560,8 @@ main .medium-img-2 {
         padding-bottom: 40px
     }
     main .img-3-container {
-        height: 69px
+        height: 69px;
+        border-radius: 2px
     }
     main .img-4-container {
         height: 160px
