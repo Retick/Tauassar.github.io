@@ -497,8 +497,7 @@ main {
 .content-mobile-text {
     font-family: Gilroy-bold;
     font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.005em;
+    // line-height: 17px;
     color: rgba(21, 16, 39, 0.6);
 }
 
@@ -522,11 +521,11 @@ $breakpoint_3: 375px;
         }
         .content-description {
             p:last-child {
-                padding-bottom: 40px;
+                padding-bottom: 20px;
             }
         }
         .content-text {
-            padding: 40px;
+            padding: 20px;
         }
         .content-3-frame-container {
             margin-bottom: 40px;
